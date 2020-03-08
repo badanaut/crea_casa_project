@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1618,8 +1613,25 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
+			margin: 0 0 2em 0;		
 		}
+
+		.image.company_logo{				
+				display: block;
+				margin: 0 0 2em 0;
+				margin-left: auto;
+ 				margin-right: auto;
+ 				max-height:250px;
+ 				max-width: auto;
+
+		}
+			.image.company_logo img {				
+				/*margin: 0 auto;
+				width: auto;*/			
+				margin-left: auto;
+ 				margin-right: auto;
+ 				object-fit: contain;  				
+			}
 
 /* Button */
 
@@ -2099,7 +2111,8 @@ input, select, textarea {
 
 		#logo p {
 			color: #eee;
-			color: rgba(255, 255, 255, 0.5);
+			/*color: rgba(255, 255, 255, 0.5);*/
+			color: white;
 			text-transform: uppercase;
 			margin: 1.25em 0 0 0;
 			display: block;
@@ -2945,6 +2958,7 @@ input, select, textarea {
 					display: block;
 					letter-spacing: 0.2em;
 					font-size: 0.9em;
+
 				}
 
 		/* Intro */
