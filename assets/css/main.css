@@ -1620,17 +1620,21 @@ input, select, textarea {
 				display: block;
 				margin: 0 0 2em 0;
 				margin-left: auto;
- 				margin-right: auto;
- 				max-height:250px;
- 				max-width: auto;
+ 				margin-right: auto; 			
+ 				height: 15em;
+					line-height: 5em;
+					-moz-transition: all .25s ease-in-out;
+					-webkit-transition: all .25s ease-in-out;
+					-o-transition: all .25s ease-in-out;
+					-ms-transition: all .25s ease-in-out;
+					transition: all .25s ease-in-out;
+					outline: 0;			 
 
 		}
-			.image.company_logo img {				
-				/*margin: 0 auto;
-				width: auto;*/			
+			.image.company_logo img {		
 				margin-left: auto;
- 				margin-right: auto;
- 				object-fit: contain;  				
+ 				margin-right: auto; 			
+ 								
 			}
 
 /* Button */
