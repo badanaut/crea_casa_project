@@ -1690,7 +1690,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #c7493a url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1868,7 +1868,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #e97770 !important;
+			color: #c7493a !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -1973,7 +1973,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 6em 0 9em 0;
+		padding: 3em 0 9em 0;
 	}
 
 		.wrapper .title {
@@ -2020,13 +2020,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #c7493a url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #c7493a url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2280,7 +2280,7 @@ input, select, textarea {
 	}
 
 		#highlights .highlight h3 {
-			color: #e97770;					
+			color: #c7493a;					
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -3073,3 +3073,16 @@ input, select, textarea {
 						}
 
 	}
+.zoom { 
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 0px;
+
+}
+
+.zoom:hover {
+	z-index: 2;
+	transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
