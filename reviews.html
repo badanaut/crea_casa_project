@@ -35,12 +35,25 @@
 						</div>
 						<div class="reviewform">
 						
-							  					  
+							<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small" style="margin-left:auto; margin-right:auto;">
+													<p>1. Name</p>
+													<input type="text" name="name" id="contact-name" placeholder="First Name" />
+													<br>
+													<input type="text" name="name" id="contact-name" placeholder="Last Name" />
+													<br>
+													<p>2. Email</p>
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<p>3. Comment</p>
+													<textarea name="message" id="contact-message" placeholder="Your feedback" rows="4" style="margin-left:auto; margin-right:auto; width: 60%;"></textarea>
+												</div>
+												
+											</div>
+								  
 							   
-						
-							<p>1. Name</p><input type="text" name="" placeholder="First Name">
-							<br><br><input type="text" name="" placeholder="Last Name">
-							<p>2. Email</p><input type="text" name="" placeholder="Your email">
 							<div class="feedback">
 								    <div class="rating">
 								      <input type="radio" name="rating" id="rating-5">
@@ -142,8 +155,16 @@
 								        </div>
 								      </div>
 								    </div>
-							  </div>
-							<p>Comment</p><textarea name="Text1" cols="60" rows="5" placeholder="Your feedback" style="padding-left:1em;"></textarea>
+							  </div>							
+								
+								<div class="col-12">
+									<ul class="actions">
+									<br>
+									<li><input type="submit" class="style1" value="Submit" /></li>													
+									</ul>
+								</div>
+							</form>
+					</div>
 					</div>
 				</section>			
 
