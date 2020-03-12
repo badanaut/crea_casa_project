@@ -2296,7 +2296,7 @@ input, select, textarea {
 		background: #282b34 url("images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
-		padding-bottom: 6em;
+		padding-bottom: 0em;
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
@@ -3075,18 +3075,18 @@ input, select, textarea {
 						}
 
 	}
-.zoom { 
+.image_bar { 
   transition: transform .2s; /* Animation */
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  width: 9em;
+  height: 9em;
+  margin: 0;
   padding-left: 0px;
 
 }
 
-.zoom:hover {
-	z-index: 2;	
-	transform: scale(2.5);
+.image_bar:hover {
+	/*z-index: 2;	
+	transform: scale(2.5);*/
 	 /* (250% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 	
 }
