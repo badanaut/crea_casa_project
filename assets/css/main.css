@@ -209,6 +209,44 @@ input, select, textarea {
 
 		}
 
+	.container_works {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 68em;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			.container_works {
+				width: 70em;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container_works {
+				width: calc(100% - 100px);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container_works {
+				width: calc(100% - 100px);
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.container_works {
+				width: calc(100% - 40px);
+			}
+
+		}
+
 /* Row */
 
 	.row {
@@ -1628,9 +1666,9 @@ input, select, textarea {
 					-o-transition: all .25s ease-in-out;
 					-ms-transition: all .25s ease-in-out;
 					transition: all .25s ease-in-out;
-					outline: 0;	*/
-					height:30%; 
-					width:30%;					
+					outline: 0;	*/					
+					width:15em;	
+					height:auto; 				
 		}
 			.image.company_logo img {		
 				margin-left: auto;
@@ -2297,6 +2335,7 @@ input, select, textarea {
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 0em;
+
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
@@ -3211,4 +3250,44 @@ input, select, textarea {
   flex-wrap: wrap;
   align-items: center;
   box-shadow: 0 4px 30px rgba(0,0,0,.05);
+}
+.diamond-grid{
+	width: 70%;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+.works_image{
+	width: 220px;
+	height: 220px;
+	
+}
+.works_image img{
+	position: absolute;
+	/*top: 50%;*/
+	left: 0;
+	/*transform: translateY(-50) scale(1.5);*/
+	width: 100%;
+	height: 100%;
+}
+
+.diamond-box:hover{
+	transform: scale(1.5) rotate(45deg);
+  transition:transform 0.5s;
+  z-index: 10;
+}
+div.diamond-grid{
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 500px){
+
+	.diamond-grid{
+		width: 100%;
+		margin:0px;
+	}
+	.container{
+		margin:0px;
+	}
 }
