@@ -3260,7 +3260,7 @@ input, select, textarea {
 .works_image{
 	width: 220px;
 	height: 220px;
-	
+	opacity: 0.65;
 }
 .works_image img{
 	position: absolute;
@@ -3269,17 +3269,23 @@ input, select, textarea {
 	/*transform: translateY(-50) scale(1.5);*/
 	width: 100%;
 	height: 100%;
+
+}
+.works_image:hover{
+	opacity: 1;
 }
 
-.diamond-box:hover{
+.diamond-box:hover{	
 	transform: scale(1.5) rotate(45deg);
-  transition:transform 0.5s;
-  z-index: 10;
+    transition:transform 0.5s;
+    z-index: 10;
+
 }
 div.diamond-grid{
 	display: flex;
 	justify-content: center;
 }
+
 
 @media (max-width: 500px){
 
@@ -3287,7 +3293,5 @@ div.diamond-grid{
 		width: 100%;
 		margin:0px;
 	}
-	.container{
-		margin:0px;
-	}
+	
 }
