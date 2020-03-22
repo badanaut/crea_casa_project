@@ -5,7 +5,7 @@
 		<link rel = "icon" href="./images/crea_casa_logo.png" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />		
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -34,23 +34,31 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="#">
+										<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbw92m2lc5EFFtrDF_4n6FAgZWxQZf70YBYzrMuE_u2nVgG-KFCk/exec">
+											<!-- onsubmit="setTimeout(function(){this.style.pointerEvents = 'none';}, 50000)" -->
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+													<input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z]{3,}" title="Invalid name" required/>
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
+													<input type="text" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email" required />
 												</div>
 												<div class="col-12">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea style="resize: none;" name="message" id="message" placeholder="Message" rows="4"pattern="[]{5,}" title="Your message is too short" required/></textarea>
 												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
+												<div class="col-12" >
+													<ul class="actions" style="display: flex;">
+														<li><input type="submit" class="style1" value="Send" /></li> <!-- onsubmit="return clear_text_box();" -->
+														<li id="send_img"><img src="./images/oie_22145016XHPUsgBr.gif" style="height: 60%; width: 60%; display: none;"></li>
+														
 													</ul>
 												</div>
+											</div>
+											<br>
+											<br>
+											<div style="display:none" class="thankyou_message">											 
+											 <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+											 </h2>											 
 											</div>
 										</form>
 									</section>
@@ -75,9 +83,9 @@
 												<section>
 													<h3 class="icon solid fa-comment">Social</h3>
 													<p>														
-														<a href="#">facebook.com/untitled</a>
+														<a href="#">facebook.com/crea-casa</a>
 														<br>
-														<a href="#">instagram.com/untitled</a>
+														<a href="#">instagram.com/crea-casa</a>
 													</p>
 												</section>
 											</div>
@@ -85,7 +93,7 @@
 												<section>
 													<h3 class="icon solid fa-envelope">Email</h3>
 													<p>
-														<a href="#">info.crea-casa@gmail.com</a>
+														<a href="#">contact.creacasa@gmail.com</a>
 													</p>
 												</section>
 											</div>
@@ -104,6 +112,9 @@
 											</div>
 										</div>
 									</section>
+									<section id="footer" class="wrapper">
+										
+									</section>
 
 							</div>
 						</div>						
@@ -119,6 +130,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		
+			<script src="assets/js/form-submission-handler.js"></script>
+		
+			
 
 	</body>
 </html>

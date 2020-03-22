@@ -58,3 +58,13 @@
 				});
 
 })(jQuery);
+
+function clear_text_box(){	
+
+	document.getElementById('name').value = '';
+	// document.getElementById('email').value = '';
+	// document.getElementById('message').value = '';
+	// document.getElementById("contact_form").style.pointerEvents = 'auto';
+}
+
+
