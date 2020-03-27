@@ -59,12 +59,15 @@
 
 })(jQuery);
 
-function clear_text_box(){	
 
-	document.getElementById('name').value = '';
-	// document.getElementById('email').value = '';
-	// document.getElementById('message').value = '';
-	// document.getElementById("contact_form").style.pointerEvents = 'auto';
-}
+function get_rating(){
 
-
+				  var note = ["rating-5", "rating-4", "rating-3", "rating-2", "rating-1"];
+				  var i;
+				  for (i = 0; i < note.length; i++) {
+					     if (document.getElementById(note[i]).checked==true){
+					        document.getElementById('nota').value = note[i].slice(-1);
+					     }
+					    
+				  }
+  				}

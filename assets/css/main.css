@@ -3249,7 +3249,7 @@ input, select, textarea {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: 0 4px 30px rgba(0,0,0,.05);
+  /*box-shadow: 0 4px 30px rgba(0,0,0,.05);*/
 }
 .diamond-grid{
 	width: 70%;
@@ -3294,4 +3294,28 @@ div.diamond-grid{
 		margin:0px;
 	}
 	
+}
+#nota{
+	height: 0px;
+	width: 0px;
+	display:none;
+}
+.user_review{
+	display:flex;
+	flex-direction: row;
+}
+.user_name{
+	width: 50%;
+	margin-left:2em;
+	padding-right:10em;
+}
+.review_content{
+	height: 100%;
+	
+}
+.user_rating_img{
+
+	height: 15%;
+	width: 15%;
+
 }

@@ -35,13 +35,13 @@
 						</div>
 						<div class="reviewform">
 						
-							<form method="post" action="#">
+							<form class="gform" method="post" action="http://localhost:3000/send" >
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small" style="margin-left:auto; margin-right:auto;">
 													<p>1. Name</p>
-													<input type="text" name="name" id="contact-name" placeholder="First Name" />
+													<input type="text" name="firstname" id="contact-firstname" placeholder="First Name" />
 													<br>
-													<input type="text" name="name" id="contact-name" placeholder="Last Name" />
+													<input type="text" name="lastname" id="contact-lastname" placeholder="Last Name" />
 													<br>
 													<p>2. Email</p>
 													<input type="text" name="email" id="contact-email" placeholder="Email" />
@@ -49,12 +49,13 @@
 												<div class="col-12">
 													<p>3. Comment</p>
 													<textarea name="message" id="contact-message" placeholder="Your feedback" rows="4" style="margin-left:auto; margin-right:auto;"></textarea>
-												</div>
+													<input type="text" name="nota" id="nota" value="1" />
+												</div>										
 												
 											</div>
 								  
 							   
-							<div class="feedback">
+							<div class="feedback" onclick="get_rating()">
 								<!-- <p>Not what I expected at all</p> -->
 								    <div class="rating">
 								      <input type="radio" name="rating" id="rating-5">
@@ -165,23 +166,114 @@
 									<li><input type="submit" class="style1" value="Submit" /></li>													
 									</ul>
 								</div>
+								<br><br>
+							<div style="display:none" class="thankyou_message">											 
+								 <h2>Your review has been sent succesfuly.<br>
+								 	<em>Thank You!</em></h2>											 
+							</div>
 							</form>
 					</div>
 					</div>
 				</section>			
 
 			<!-- Footer -->
-				<section id="footer" class="wrapper">
+				<section id="footer" class="wrapper style2">
 					<div class="title">Reviews</div>
-					
-						<div id="bottom_info">
-							<ul>									
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li><li>
-									<a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									<li><a href="#" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
-							</ul>
+						<div class="container">					
+							
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 1</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/5star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 2</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/4star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 3</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/3star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 4</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/2star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 5</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/1star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 6</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/5star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 7</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/4star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 8</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/3star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 9</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/2star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+								<hr>
+								<article class="user_review">								
+									<div class="user_name">User 10</div>
+									<div class="review_content">
+										<img class="user_rating_img" src="./images/1star.png">
+										<div>Review comment</div>
+									</div>	
+								</article>
+						
+						
+
 						</div>
+							<div id="bottom_info">
+								<hr>
+								<ul>									
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li><li>
+										<a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+										<li><a href="#" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+								</ul>
+							</div>
 					</div>
 				</section>
 
@@ -194,6 +286,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="assets/js/form-submission-handler.js"></script>
+
+		
 
 	</body>
 </html>
