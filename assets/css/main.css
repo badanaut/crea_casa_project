@@ -3251,50 +3251,9 @@ input, select, textarea {
   align-items: center;
   /*box-shadow: 0 4px 30px rgba(0,0,0,.05);*/
 }
-.diamond-grid{
-	width: 70%;
-	margin-left: auto;
-	margin-right:auto;
-
-}
-.works_image{
-	width: 220px;
-	height: 220px;
-	opacity: 0.8;
-}
-.works_image img{
-	position: absolute;
-	/*top: 50%;*/
-	left: 0;
-	/*transform: translateY(-50) scale(1.5);*/
-	width: 100%;
-	height: 100%;
-
-}
-.works_image:hover{
-	opacity: 1;
-}
-
-.diamond-box:hover{	
-	transform: scale(1.5) rotate(45deg);
-    transition:transform 0.5s;
-    z-index: 2;
-
-}
-div.diamond-grid{
-	display: flex;
-	justify-content: center;
-}
 
 
-@media (max-width: 500px){
 
-	.diamond-grid{
-		width: 100%;
-		margin:0px;
-	}
-	
-}
 #nota{
 	height: 0px;
 	width: 0px;
@@ -3311,6 +3270,7 @@ div.diamond-grid{
 }
 .review_content{
 	height: 100%;
+
 	
 }
 .user_rating_img{
@@ -3318,4 +3278,54 @@ div.diamond-grid{
 	height: 15%;
 	width: 15%;
 
+}
+
+.row {
+  margin-top: 2em;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display:grid;
+ 
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.column img:hover{
+	transform: scale(1.5, 1.5);
+	transition: 1s;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
