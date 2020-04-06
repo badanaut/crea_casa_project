@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Crea Casa General Constructor</title>
-		<link rel = "icon" href="./images/crea_casa_logo.png" type="image/png">
+		<title>Impreza Edile</title>
+		<link rel = "icon" href="./images/logo.png" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />		
@@ -12,13 +12,13 @@
 
 			<!-- Header -->
 				<section id="header" class="wrapper">					
-
+						<div id="logo"><img src="./images/logo.png" class="image company_logo"></div>
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>								
 								<li><a href="works.html">Works</a></li>
-								<li><a href="reviews.html">Reviews</a></li>								
+								<li><a href="reviews.php">Reviews</a></li>								
 								<li><a href="contact_page.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -34,31 +34,34 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbw92m2lc5EFFtrDF_4n6FAgZWxQZf70YBYzrMuE_u2nVgG-KFCk/exec">
-											<!-- onsubmit="setTimeout(function(){this.style.pointerEvents = 'none';}, 50000)" -->
+										<form class="gform" method="post" action="https://script.google.com/macros/s/AKfycbzAr-s3e4x2CMXwnTrfU-S4n2CRQr5hz_9o8sDcMQ/exec">
+											
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z]{3,}" title="Invalid name" required/>
+													<input type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-z ]{3,30}" title="Enter your name" required/>
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="text" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email" required />
+													<input type="text" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,50}$" title="Enter your email" required />
 												</div>
 												<div class="col-12">
-													<textarea style="resize: none;" name="message" id="message" placeholder="Message" rows="4"pattern="[]{5,}" title="Your message is too short" required/></textarea>
+													<textarea style="resize: none;" name="message" id="message" placeholder="Message" rows="4" pattern="[]{5,1000}" title="Write your message" required/></textarea>
 												</div>
 												<div class="col-12" >
 													<ul class="actions" style="display: flex;">
 														<li><input type="submit" class="style1" value="Send"/></li>
-														<li id="send_img"><img src="./images/oie_22145016XHPUsgBr.gif" style="height: 60%; width: 60%; display: none;"></li>
+														
+														
 														
 													</ul>
 												</div>
 											</div>
 											<br>
 											<br>
-											<div style="display:none" class="thankyou_message">											 
+											<div style="display:none" class="thankyou_message">	
+
 											 <h2><em>Thanks</em> for contacting us! We will get back to you soon!
-											 </h2>											 
+											 </h2>
+											 <img src="./images/gif_img.gif" class="image company_logo">											 
 											</div>
 										</form>
 									</section>
@@ -69,31 +72,22 @@
 								<!-- Contact -->
 									<section class="feature-list small">
 										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon solid fa-home">Address</h3>
-													<p>
-														Crea Casa General Constructor<br />
-														1234 Somewhere Rd<br />
-														Torino, TN 00000
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
+											
+											<div class="col-7 col-12-small">
 												<section>
 													<h3 class="icon solid fa-comment">Social</h3>
 													<p>														
-														<a href="#">facebook.com/crea-casa</a>
+														<a href="https://www.facebook.com/Impreza-Edile-103361401335035">facebook.com/Impreza-Edile</a>
 														<br>
-														<a href="#">instagram.com/crea-casa</a>
+														<a href="https://www.instagram.com/imprezaediletorino/">instagram.com/Impreza-Edile</a>
 													</p>
 												</section>
 											</div>
-											<div class="col-6 col-12-small">
+											<div class="col-5 col-12-small">
 												<section>
 													<h3 class="icon solid fa-envelope">Email</h3>
 													<p>
-														<a href="#">contact.creacasa@gmail.com</a>
+														<a href="mailto:impreza.edile.info@gmail.com">contact.creacasa@gmail.com</a>
 													</p>
 												</section>
 											</div>
@@ -101,8 +95,8 @@
 												<section>
 													<h3 class="icon solid fa-phone">Phone</h3>
 													<p>
-														+39-347-618-0045<br>
-														+39-347-579-4495
+														<a href="tel:+39-347-618-0045">+39-347-618-0045</a><br>
+														<a href="tel:+39-347-579-4495">+39-347-579-4495</a>
 														<br>
 														<br>
 														<br>

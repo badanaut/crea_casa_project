@@ -100,12 +100,7 @@
             document.getElementById("email").value="";
             document.getElementById("message").value="";
           }
-          if (path.split("/").pop()=="reviews.html"){
-            document.getElementById("contact-firstname").value="";
-            document.getElementById("contact-lastname").value="";
-            document.getElementById("contact-email").value="";
-            document.getElementById("contact-message").value="";
-          }
+        
           return;
       };
       // url encode form data for sending as post data
